@@ -76,7 +76,7 @@ cdef extern from "cholmod_extra.h":
     cholmod_sparse * cholmod_spinv(cholmod_factor *,
                                    cholmod_common *) except? NULL
 
-cdef extern from "suitesparse/cholmod.h":
+cdef extern from "cholmod.h":
     cdef enum:
         CHOLMOD_INT
         CHOLMOD_PATTERN, CHOLMOD_REAL, CHOLMOD_COMPLEX
